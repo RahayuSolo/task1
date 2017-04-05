@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Training Bootstrap</title>
+
+    <!-- Bootstrap -->
+	<script src="js/jquery-3.2.0.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-material-design.min.css" rel="stylesheet">
+    <link href="css/ripples.min.css" rel="stylesheet">
+    <style>
+      body{
+        padding-top: 50px;
+        background-color: #ffffff;
+      }
+    </style>
+  </head>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="js/ripples.min.js"></script>
+    <script>
+      $.material.init();
+    </script>
+  </head>
+  
+  <body>   
+    <!--bagian navigation-->
+    <div class="navbar navbar-fixed-top navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+            <span class="icon-bar"/>
+          </button>
+          <a href=”#” class = "navbar-brand">Training Bootstrap</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="profil.html">Profile</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>  
+      </div>
+    </div>
+    
+	<!-- Bagian Content -->
+    <div class="container clearfix">
+      <div class="row row-offcanvas row-offcanvas-left ">
+        <!--Bagian Kiri-->
+        <div class="col-xs-12 col-sm-3 side pull-left sidebar-offcanvas" id="sidebar" role="navigation">
+          <div class="list-group">
+            <h1> Aminah Tri Rahayu </h1>
+			 <img src="Aminah.jpg" alt="potoprofil" height="150" width="150" style="border-radius:50%;">
+          </div>
+        </div>
+
+        <!--Bagian Kanan-->
+        <div id="main-content" class="col-xs-12 col-sm-9 main pull-right">
+        <div class="container">
+			  <form class="form-horizontal">
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="email">Email:</label>
+				  <div class="col-sm-7">
+					<input type="email" class="form-control" id="email" placeholder="Email anda">
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="pwd">Message:</label>
+				  <div class="col-sm-7">          
+					<input type="message" class="form-control" id="message1" placeholder="Message anda">
+				  </div>
+				</div>
+				<div class="form-group">        
+				  <div class="col-sm-offset-2 col-sm-7">
+					<input type="submit" value="Submit" class="bt"/>
+				  </div>
+				</div>
+			  </form>
+			</div>
+		</div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.2.5.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+ </html>
